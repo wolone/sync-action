@@ -5,6 +5,7 @@
 - https://github.com/frappe/frappe -> https://cnb.cool/frappecn/frappe
 - https://github.com/frappe/hrms   -> https://cnb.cool/frappecn/hrms
 - https://github.com/frappe/crm    -> https://cnb.cool/frappecn/crm
+ - https://github.com/frappe/erpnext -> https://cnb.cool/frappecn/erpnext
 
 使用说明
 - 目标用户名固定为 `cnb`，在仓库 Settings -> Secrets 中添加 Secret：`CNB_TOKEN`（用于 HTTP 推送认证）。

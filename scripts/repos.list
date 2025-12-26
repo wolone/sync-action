@@ -9,6 +9,7 @@
 frappe
 hrms
 crm
+erpnext
 
 # 显式 URL 示例：
 # https://github.com/frappe/frappe.git https://cnb.cool/frappecn/frappe.git

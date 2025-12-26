@@ -28,6 +28,7 @@ else
     "frappe"
     "hrms"
     "crm"
+    "erpnext"
   )
 fi
 
