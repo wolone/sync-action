@@ -1,0 +1,14 @@
+# `scripts/sync_repos.sh` 的映射文件示例
+# 每个非空且非注释的行支持两种格式：
+# 1) repo_name
+#    -> 源： https://github.com/frappe/<repo_name>.git
+#       目标： https://cnb:<CNB_TOKEN>@cnb.cool/frappecn/<repo_name>.git
+# 2) <src_repo_url> <dst_repo_url>
+#    -> 源和目标均使用完整 URL
+
+frappe
+hrms
+crm
+
+# 显式 URL 示例：
+# https://github.com/frappe/frappe.git https://cnb.cool/frappecn/frappe.git

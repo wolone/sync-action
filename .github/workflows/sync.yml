@@ -1,0 +1,24 @@
+name: 同步仓库
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 3 * * *'
+
+jobs:
+  mirror:
+    name: 镜像仓库
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 使同步脚本可执行
+        run: chmod +x scripts/sync_repos.sh
+
+      - name: 运行同步脚本
+        env:
+          CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
+        run: |
+          set -euo pipefail
+          ./scripts/sync_repos.sh
